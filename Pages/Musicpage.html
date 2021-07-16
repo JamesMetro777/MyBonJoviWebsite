@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="website.css">
+<script>
+	function changeText(change)
+		{
+
+			if (document.body.style.fontSize == "")
+			{
+				document.body.style.fontSize = "1.0em";
+//				document.getElementById("mainContent").style.fontSize = "1.0em";
+			}
+			
+			var fontsize = parseFloat (document.body.style.fontSize);
+			fontsize += change;
+//			alert(fontsize);
+			if (fontsize < 0.5) fontsize = 0.5;
+			if (fontsize > 2) fontsize = 2;
+			document.body.style.fontSize = fontsize + "em";
+//			document.getElementById("mainContent").style.fontsize = fontsize + "em";
+		}
+</script>
+</head>
+
+<body class="oneColFixCtrHdr">
+
+<div id="container">
+
+<div id="header">
+<h1><img src="http://3.bp.blogspot.com/-xsbnzT3g7uA/UJkaM5MHpPI/AAAAAAAAI4U/4tRpdL1YtIM/s1600/11.jpg" width="478" height="105" /></h1>
+<p><a href="Intropage.html">Intro</a> <a href="Albumspage.html">Albums</a> <a href="Gallery.html">Gallery</a> <a href="Richie sambora Gallery.html">Richie Gallery</a> <a href="Musicpage.html">Music</a> <a href="Otherpage.html">Other</a> <a href="blog page.html">Blog</a>
+ <a href="downloadpage.html"></a> <a href="downloadpage.html"> </a><a href="downloadpage.html">Download</a></p>
+  </div>
+  
+  <div id="mainContent">
+  <img src="MagnifyOne.jpg" onClick="changeText(0.1)" width="60" height="60" />
+  <img src="MagnifyTwo.jpg" onClick="changeText(-0.1)" width="60" height="60" />
+    <h1> Music</h1>
+    <p><a href="http://www.bonjovi.com/en/music">Bon Jovi — Music</a></p>
+    <p><a href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dpopular&amp;field-keywords=bon+jovi">Amazon.com:  bon jovi: Music</a></p>
+    
+    <p><a href="http://www.last.fm/music/Bon+Jovi">Bon Jovi —  Songs, Albums, Pictures and Radio — Last.fm</a></p>
+<p><a href="http://www.bbc.co.uk/music/artists/5dcdb5eb-cb72-4e6e-9e63-b7bace604965">BBC  - Music - Bon Jovi</a></p>
+    <p><a href="http://www.lyricsfreak.com/b/bon+jovi/">Bon Jovi  Lyrics</a></p>
+    <p><a href="http://www.ebay.co.uk/sch/i.html?_nkw=bon%20jovi%20albums&amp;clk_rvr_id=555086593962&amp;adpos=1o2&amp;MT_ID=12&amp;crlp=13355532535_2113181&amp;tt_encode=raw&amp;geo_id=31951&amp;keyword=bon+jovi+albums&amp;crdt=0">bon  jovi albums | eBay</a></p>
+    <p><a href="http://www.drycounty.com/">Bon Jovi - Dry County fan site</a></p>
+    <p><a href="http://www.azlyrics.com/b/bonjovi.html">http://www.azlyrics.com/b/bonjovi.html#351</a></p>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+    <p><img src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-listen-to-bon-jovi-12.png" width="300" height="250" /></p>
+    <p>&nbsp;</p>
+	
+	<a class="twitter-timeline"
+	href="https://twitter.com/BonJovi"
+	data-widget-id="443056910325907456">
+	Tweets by @BonJovi</a>
+    
+	<script>
+	!function(d,s,id)
+	{
+		var js,fjs=d.getElementsByTagName(s)[0],
+		p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
+		{js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js,fjs);
+		}}(document,"script","twitter-wjs");
+	</script>
+	</div>
+  
+  <div id="footer">
+  <p>BON JOVI- WANTED DEAD OR ALIVE</p>
+</div>
+  
+</body>
+</html>

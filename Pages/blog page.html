@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="website.css">
+<script>
+	function changeText(change)
+		{
+
+			if (document.body.style.fontSize == "")
+				{
+					document.body.style.fontSize = "1.0em";
+//					document.getElementById("mainContent").style.fontSize = "1.0em";
+				}
+			
+			var fontsize = parseFloat (document.body.style.fontSize);
+			fontsize += change;
+//			alert(fontsize);
+			if (fontsize < 0.5) fontsize = 0.5;
+			if (fontsize > 2) fontsize = 2;
+			document.body.style.fontSize = fontsize + "em";
+//			document.getElementById("mainContent").style.fontsize = fontsize + "em";
+		}
+
+	function validate()
+	{
+		if ((document.getElementById("name").length != 3 )||
+			(document.getElementById("email").indexOf('@') == -1 )||
+			(document.getElementById("comment").length != 10  ))
+		{
+			alert ("Please fill the form");
+			return false;
+		}
+		else
+		{
+			alert ("Thank You");
+			return true;
+		}
+	}	
+	
+</script>
+</head>
+
+<body class="oneColFixCtrHdr">
+
+<div id="container">
+
+<div id="header">
+<h1><img src="http://3.bp.blogspot.com/-xsbnzT3g7uA/UJkaM5MHpPI/AAAAAAAAI4U/4tRpdL1YtIM/s1600/11.jpg" width="478" height="105" /></h1>
+<p><a href="Intropage.html">Intro</a> <a href="Albumspage.html">Albums</a> <a href="Gallery.html">Gallery</a> <a href="Richie sambora Gallery.html">Richie Gallery</a> <a href="Musicpage.html">Music</a> <a href="Otherpage.html">Other </a><a href="blog page.html">Blog </a><a href="downloadpage.html">Download</a><!-- end #header --></p>
+</div>
+
+  <div id="mainContent">
+  <img src="MagnifyOne.jpg" onClick="changeText(0.1)" width="60" height="60" />
+  <img src="MagnifyTwo.jpg" onClick="changeText(-0.1)" width="60" height="60" />
+    <h1>Blog Comment Page</h1>
+    <p>We want to keep in touch with you.We also want to know what you think of our website. 
+	   To post a comment firstly type your name, Email, comment and then send.</p>
+
+<form name="form" onsubmit="return validate()"  	
+  >
+    <label>Name: 
+      <input id= "name" name="name"
+		type="text">
+    </label>
+    <br />
+    <label>Email Address: 
+      <input id="email" name="email"
+		type="text">
+    </label>
+    </p>
+  <p>
+ </label>Comment:
+    <textarea name="comment" id="comment" cols="45" rows="5"type="text"></textarea> 
+    </p>
+  <p>
+    <input type="submit" name="Send" id="Send" value="Submit" action="validate" />
+    <br />
+  </p>
+</form>		
+  </div>
+  
+  <div id="footer">
+  <p>&quot;I want Be Loved, I wanna Be!&quot;</p>
+  
+ </div>
+</body>
+</html>

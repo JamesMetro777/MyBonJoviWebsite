@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="website.css">
+<script>
+	function changeText(change)
+		{
+
+			if (document.body.style.fontSize == "")
+			{
+				document.body.style.fontSize = "1.0em";
+//				document.getElementById("mainContent").style.fontSize = "1.0em";
+			}
+			
+			var fontsize = parseFloat (document.body.style.fontSize);
+			fontsize += change;
+//			alert(fontsize);
+			if (fontsize < 0.5) fontsize = 0.5;
+			if (fontsize > 2) fontsize = 2;
+			document.body.style.fontSize = fontsize + "em";
+//			document.getElementById("mainContent").style.fontsize = fontsize + "em";
+		}
+</script>
+</head>
+
+<body class="oneColFixCtrHdr">
+
+<div id="container">
+
+<div id="header">
+<h1><img src="http://3.bp.blogspot.com/-xsbnzT3g7uA/UJkaM5MHpPI/AAAAAAAAI4U/4tRpdL1YtIM/s1600/11.jpg"  width="478" height="105" /></h1>
+<p><a href="Intropage.html">Intro</a> 
+<a href="Albumspage.html">Albums</a>
+ <a href="Gallery.html">Gallery</a> 
+ <a href="Richie sambora Gallery.html">Richie Gallery</a>
+ <a href="Musicpage.html">Music</a> 
+ <a href="Otherpage.html">Other</a>
+ <a href="downloadpage.html"></a>
+ <a href="blog page.html">Blog</a>
+<a href="downloadpage.html">
+ </a><a href="downloadpage.html"> Download</a></p>
+ </div>
+ 
+  <div id="mainContent">
+  <img src="MagnifyOne.jpg" onClick="changeText(0.1)" width="60" height="60" />
+  <img src="MagnifyTwo.jpg" onClick="changeText(-0.1)" width="60" height="60" />
+    <h1>Downloads</h1>
+    <p>Here we have albums which you can download or listen to. Just click the links.</p>
+	<p><a href="bonjovi.html">Bon Jovi</a></p>
+    <p><a href="7800fahrenheit.html">7800 Fahrenheit</a></p> 
+    <p><a href="slipperywhenwet.html">Slippery When Wet</a> </p>
+    <p><a href="newjersey.html"> New Jersey</a></p>
+	<p><a href="keepthefaith.html">Keep The Faith</a></p>
+      <a href="thesedays.html">These Days</a></p>
+      <a href="crush.html">Crush</a></p>
+      <a href="onewildnight.html">
+      One Wild Night (Live)</a></p>
+      <a href="thisleftfeelsright.html">This Left Feels Right</a></p>
+      <a href="haveaniceday.html">Have A Nice Day</a>
+    <p><a href="thecircle.html">The Circle</a></p>
+      <a href="greatesthits.html">Greatest Hits</a></p>
+	  <a href="whatabhoutnow.html">What About Now</a></p>
+	  <a href="rare.html">Rare Songs</a></p>
+    </p>
+
+</div>
+   
+  <div id="footer">
+  <p>&quot;Welcome to wherever you are&quot;</p>
+ </div>
+</body>
+</html>
+	

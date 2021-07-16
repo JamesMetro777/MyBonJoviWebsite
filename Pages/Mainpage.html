@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="website.css">
+	<script>
+		function changeText(change)
+		{
+
+			if (document.body.style.fontSize == "")
+			{
+				document.body.style.fontSize = "1.0em";
+//				document.getElementById("mainContent").style.fontSize = "1.0em";
+			}
+			
+			var fontsize = parseFloat (document.body.style.fontSize);
+			fontsize += change;
+//			alert(fontsize);
+			if (fontsize < 0.5) fontsize = 0.5;
+			if (fontsize > 2) fontsize = 2;
+			document.body.style.fontSize = fontsize + "em";
+//			document.getElementById("mainContent").style.fontsize = fontsize + "em";
+		}
+	</script>
+</head>
+
+<body class="oneColFixCtrHdr">
+	<div id="container">
+		<div id="header">
+			<h1><img src="http://3.bp.blogspot.com/-xsbnzT3g7uA/UJkaM5MHpPI/AAAAAAAAI4U/4tRpdL1YtIM/s1600/11.jpg" width="478" height="105" /></h1>
+			<p>
+			<a href="Intropage.html">Intro</a>
+			<a href="Albumspage.html">Albums</a>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Richie sambora Gallery.html">Richie Gallery</a>
+			<a href="Musicpage.html">Music</a>
+			<a href="Otherpage.html">Other</a>
+			<a href="blog page.html">Blog </a>
+			<a href="downloadpage.html">Download</a>
+			</p>
+		</div>
+		<div id="mainContent">
+			<img src="MagnifyOne.jpg" onClick="changeText(0.1)" width="60" height="60" />
+			<img src="MagnifyTwo.jpg" onClick="changeText(-0.1)" width="60" height="60" />
+			<h1> Welcome To The Bon Jovi Website </h1>
+			<p>Here you will have an insight into the world of Bon Jovi.</p>
+			<p>Bon Jovi's musical style has generally been characterized as 'hard rock', 'pop/hair metal', 'arena rock' and 'pop rock', although they have also experimented and varied from these genres at times. 
+			   The band's first four albums blended the pop metal and hard rock genres, although they had mostly shed the pop metal sound by their fifth studio album, Keep the Faith, and their sixth, These Days,
+			   utilizing a more mature hard rock sound. Crush was characterized as "far enough into pop/rock to actually stand a chance of getting airplay", while Bounce was described as "heavy, serious rock".
+			   Have a Nice Day was also characterized as being heavier than Crush. The band altered their sound dramatically in their next release, Lost Highway, blending influences from country music and country rock,
+			   a sound Jon Bon Jovi described as "a Bon Jovi album influenced by Nashville". Bon Jovi returned to a more typical rock sound on The Circle, which was described by Allmusic as "conjured by echoed, 
+			   delayed guitars, shimmering keyboards, and spacious rhythms." </p>
+			<p>Some of the band's influences are Bruce Springsteen, The Rolling Stones, Aerosmith, Van Halen, The Beatles, Tom Petty and The Animals. Other bands- Raze (Jon Bon Jovi when 13), Atlantic City Expressway 
+			  (Bon Jovi, 16 and David), John Bongiovi and the Wild Ones (Jon) and the rest (Jon).  </p>
+			<p>
+				<img src="http://upload.wikimedia.org/wikipedia/en/timeline/798c68604194d4a29ddb75b426ed3f19.png" 
+					 alt="" 
+					 usemap="#timeline_798c68604194d4a29ddb75b426ed3f19"
+					 width="400"
+					 height="200"/> 
+			</p>
+			<p>Timeline of Bon Jovi</p>
+		</div>
+		<div id="footer">
+			<p>BON JOVI ROCKS! </p>
+		</div>
+</body>
+</html>
